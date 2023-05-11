@@ -37,14 +37,18 @@
       <div class="col-md-6">
         <h2 class="text-body-emphasis">Form Input Data</h2>
         <p>Masukan data yang akan di proses</p>
-        <form>
+        <form method="post" action="{{ 'welcome/tampil' }}">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="nama">
+                <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">NIM</label>
+                <input type="text" class="form-control" id="nama" aria-describedby="nim" name="nim">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Umur</label>
-                <input type="number" class="form-control" id="umur">
+                <input type="number" class="form-control" id="umur" name="umur">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
